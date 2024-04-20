@@ -21,6 +21,7 @@ Steps:-
 3.https://www.tinkercad.com/things/g9OMRLAL7ni-dc-motor-control-using-h-bridge-and-ultrasonic-sensor
 4.https://techatronic.com/dc-motor-direction-control-using-arduino/
 5.https://www.brightonk12.com/cms/lib/MI02209968/Centricity/Domain/517/07%20TinkerCAD%20Electrical%20DC%20Motor%20with%20Ultrasonic%20Sensor.pdf
+6.www.quora.com
 
 #4 Code written:-
 #define DIR 2
