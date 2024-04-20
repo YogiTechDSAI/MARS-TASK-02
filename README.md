@@ -22,6 +22,64 @@ Steps:-
 4.https://techatronic.com/dc-motor-direction-control-using-arduino/
 5.https://www.brightonk12.com/cms/lib/MI02209968/Centricity/Domain/517/07%20TinkerCAD%20Electrical%20DC%20Motor%20with%20Ultrasonic%20Sensor.pdf
 
+#4 Code written:-
+#define DIR 2
+#define PWM 3
+#define echoPin 12 
+#define trigPin 13
+
+void setup()
+{
+  pinMode(DIR,OUTPUT);
+  pinMode(PWM,OUTPUT);
+  Serial.begin(9600);
+  pinMode(echoPin,INPUT);
+  pinMode(trigPin,OUTPUT);
+}
+void loop()
+{ 
+ int dist;
+ int duration;
+ digitalWrite(trigPin, LOW);  
+delayMicroseconds(2);  
+digitalWrite(trigPin, HIGH);  
+delayMicroseconds(10);  
+digitalWrite(trigPin, LOW);  
+
+duration = pulseIn(echoPin, HIGH);
+    dist = (duration * 0.0344) / 2;
+ 
+    Serial.print("Distance: ");
+    Serial.print(dist);
+    Serial.println(" cm");
+    
+ if(dist>25 && dist<35)
+ {
+  digitalWrite(DIR,LOW);
+ analogWrite(PWM,0);
+}
+ else if(dist>15 && dist<25)
+ {
+ digitalWrite(DIR,LOW);
+ analogWrite(PWM,75);
+}
+ else if(dist>0 && dist<15)
+ {
+ digitalWrite(DIR,LOW);
+ analogWrite(PWM,150);
+ }
+ else if(dist>35 && dist<45)
+ {
+ digitalWrite(DIR,HIGH);
+ analogWrite(PWM,75);
+}
+else if(dist>45)
+ {
+ digitalWrite(DIR,HIGH);
+ analogWrite(PWM,150);
+}
+}
+
 Submitted by:-
 Yogesh M.Mundle
 Roll no:- EC23I2016
