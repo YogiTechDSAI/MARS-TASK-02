@@ -1,0 +1,10 @@
+#2.Components used and steps in doing this project:-
+Components used:- Ultrasonic sensors,Arduino UNO,MD10C Motor Driver,DC Motor,Wires,Battery. Steps:- 
+1.Firstly I have collected all the required components and assembled them at one place.
+2.I have connected arduino with MD10C motor driver and write a code for it in the Arduino IDE 
+3.I have checked it's working by connecting it to battery.
+4.The DIR pin of Motor Driver is connected to PIN2 of Arduino and PWM pin is connected to PIN3 of arduino and Ground to Ground connection. 
+5.Then I integrate the connections of Ultrasonic sensors with Arduino .I connected Echo and Trigger Pin of Ultrasonic Sensor to PIN12 and PIN13 of Arduino.Similarly I connected Vin to 5V Pin of Arduino and Ground to Ground Connection. 
+6.Then I joined the power port of motor driver to a battery and write the code for various cases.
+7.Initially there was a bit problem in code then i checked again and correct my mistakes.
+8.At last, the Motor starts rotating whenever the ultrasonic sensor detect any movement.
