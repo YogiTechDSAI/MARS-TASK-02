@@ -1,0 +1,15 @@
+#1.Thought Process":-- 
+I had done many projects on tinkercad but this was my fist project doing practically.
+We got a project to simulate and write an arduino code for turning the shaft of the DC motor using ultrasonic sensor and MD10C motor driver.
+Firstly I try to search for similar projects on chrome.I got a project where the shaft of a DC motor is rotated using push botton and H-Bridge Motor Driver.
+With taking it as reference I started to making it in tinkercad .I had made a rough project on tinkercad and started writing the code for it. 
+I was doing the minimal mistakes in writing code like not defining a variable instead of number and not writing Serial begin(9600) mistakenly ..after compilation and uploading it worked .
+Then comes the time to integrate all the components practically.
+I started by joining the motor driver keys to the arduino pins.The wires were not in good condtion hence i was finding it difficult to connect properly.
+Later I joined Ultrasoic Sensor Keys to Arduino and therealso i was finding difficulty in integrating due to poor conditions of wires.
+After integration of all the components I was ready to upload code in arduino and to run it.Alas it was not running,I was thinking whether it was mistake in code or in wiring,Unfortunately in both. 
+I changed the wires and then again integrated it .
+Evaluator recheck the code and then finally I got the correct output and the motor started rotating whenever there is any movement in front of the ultrasonic sensor.
+The evaluator has given me various cases like if the movement is between the limited region of ultrasonic sensor it will rotate clockwise and for other case it will rotate anticlockwise.
+Also with clockwise and anticlockwise cases the motor will rotate with different speeds.At one of the position or distance the motor will stop rotating.
+In this way I completed this task with some online resources,some of my brain and help from seniors and batchmates.
